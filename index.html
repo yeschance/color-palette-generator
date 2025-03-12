@@ -2,25 +2,25 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Colour Palette Generator</title>
+    <title>Color Palette Generator</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <h1>Colour Palette Generator</h1>
-        <h2>Use the colour picker to create harmonious colour schemes</h2>
+        <h1>Color Palette Generator</h1>
+        <h2>Use the color picker to create harmonious color schemes</h2>
 
         <div class="controls">
             <div class="control-group">
                 <label>
-                    <input type="color" id="colourPicker" value="#2563eb">
-                    <span>Select Base Colour</span>
+                    <input type="color" id="colorPicker" value="#2563eb">
+                    <span>Select Base Color</span>
                 </label>
             </div>
 
             <div class="control-group" style="width: 100%;">
-                <label for="harmonySelect">Harmony Type</label>
+                <label>Harmony Type</label>
                 <div class="harmony-options">
                     <button data-harmony="analogous" class="active">Analogous</button>
                     <button data-harmony="monochromatic">Monochromatic</button>
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <div class="palette" id="colourPalette">
+        <div class="palette" id="colorPalette">
 
         </div>
     </div>
