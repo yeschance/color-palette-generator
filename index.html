@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Palette Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Colour Palette Generator</h1>
+        <h2>Use the colour picker to create harmonious colour schemes</h2>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>
+                    <input type="color" id="colourPicker" value="#2563eb">
+                    <span>Select Base Colour</span>
+                </label>
+            </div>
+
+            <div class="control-group" style="width: 100%;">
+                <label for="harmonySelect">Harmony Type</label>
+                <div class="harmony-options">
+                    <button data-harmony="analogous" class="active">Analogous</button>
+                    <button data-harmony="monochromatic">Monochromatic</button>
+                    <button data-harmony="triadic">Triadic</button>
+                    <button data-harmony="complementary">Complementary</button>
+                    <button data-harmony="split-complementary">Split-Complementary</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="palette" id="colourPalette">
+
+        </div>
+    </div>
+
+    <div class="alert" id="alert">Copied to clipboard!</div>
+</body>
+</html>
